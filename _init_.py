@@ -1,9 +1,12 @@
-from operations import add
+from operations import add, minus, multiplicacion, division
 def game():
     score = 0
     while True:
         print('======== Menu ========'
                 '\n1. Add'
+                '\n2. Minus'
+                '\n3. Multiplication'
+                '\n4. Division'
                 '\n0. Exit')
         option = int(input('\nChoice an option: '))
         if option == 0:
@@ -16,6 +19,22 @@ def game():
             if result == answer:
                 score += 1
                 print('Correct!!')
+        if option == 2:
+            result = minus(num_1, num_2)
+            if result == answer:
+                score += 1
+                print('Correct!!')
+        if option == 3:
+            result = multiplicacion(num_1, num_2)
+            if result == answer:
+                score += 2
+                print('Correct!!')
+        if option == 4:
+            result = division(num_1, num_2)
+            if result == answer:
+                score += 2
+                print('Correct!!')
+            
         else:
             print('Incorrect')
     print(f'======== Game Over ========'
