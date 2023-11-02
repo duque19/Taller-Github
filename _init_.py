@@ -1,4 +1,5 @@
 from operations import add
+
 def game():
     score = 0
     while True:
