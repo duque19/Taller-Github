@@ -1,0 +1,12 @@
+.DS_Store
+*.idea
+*.im]
+*.ipr
+*.iws
+*. swp
+target/
+*.png
+*.jpg
+*.bmp
+build/*
+out/
